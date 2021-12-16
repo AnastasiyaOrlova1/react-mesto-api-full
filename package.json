@@ -1,0 +1,19 @@
+{
+  "name": "react-mesto-api-full",
+  "version": "1.0.0",
+  "description": "Репозиторий для приложения проекта `Mesto`, включающий фронтенд и бэкенд части приложения со следующими возможностями: авторизации и регистрации пользователей, операции с карточками и пользователями. Бэкенд расположите в директории `backend/`, а фронтенд - в `frontend/`.",
+  "main": "1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnastasiyaOrlova1/react-mesto-api-full.git"
+  },
+  "author": "Anastasiya Orlova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnastasiyaOrlova1/react-mesto-api-full/issues"
+  },
+  "homepage": "https://github.com/AnastasiyaOrlova1/react-mesto-api-full#readme"
+}
