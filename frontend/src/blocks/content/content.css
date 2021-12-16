@@ -1,0 +1,16 @@
+.content{
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+@media (max-width: 880px){
+    .content{
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 425px){
+    .content{
+        max-width: 282px;
+    }
+}

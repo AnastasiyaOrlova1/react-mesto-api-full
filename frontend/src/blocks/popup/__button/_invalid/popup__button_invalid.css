@@ -1,0 +1,6 @@
+.popup__button_invalid{
+    border: 1px solid grey;
+    background-color: white;
+    color: grey;
+    cursor: default;
+}

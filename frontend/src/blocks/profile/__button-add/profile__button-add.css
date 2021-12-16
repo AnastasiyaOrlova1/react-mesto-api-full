@@ -1,0 +1,53 @@
+.profile__button-add{
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    border: 2px solid #FFFFFF;
+    border-radius: 2px;
+    position: relative;
+    padding: 0;
+    box-sizing: border-box;
+    margin-top: 38.75px;
+    transition: .4s ease;
+    
+}
+
+.profile__button-add::before{
+    content:'';
+    position: absolute;
+    top: 28%;
+    left: 42.67%;
+    display: block;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 22px;
+    width: 22px;
+    background-image: url(../../../images/button__add.svg);
+}
+
+.profile__button-add:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px){
+    .profile__button-add{
+        width: 50%;
+    }
+    .profile__button-add::before{
+        left: 46.67%;
+    }
+}
+
+@media (max-width: 425px){
+    .profile__button-add{
+        width: 282px;
+        margin-top: 36px;
+    }
+    .profile__button-add::before{
+        height: 16px;
+        width: 16px;
+    }
+}

@@ -1,0 +1,45 @@
+.profile__button-edit {
+    width: 24px;
+    height: 24px;
+    background-color: black;
+    border: 1px solid #FFFFFF;
+    position: relative;
+    padding: 0;
+    box-sizing: border-box;
+    align-self: center;
+    transition: .4s ease;
+}
+
+.profile__button-edit::before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    display: block;
+    height: 10px;
+    width: 10px;
+    background-image: url(../../../images/button_pen.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.profile__button-edit:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+@media (max-width: 425px) {
+    .profile__button-edit {
+        width: 18px;
+        height: 18px;
+    }
+    .profile__button-edit::before {
+        content: '';
+        position: absolute;
+        top: 5.25px;
+        left: 5.25px;
+        display: block;
+        height: 7.5px;
+        width: 7.5px;
+    }
+}

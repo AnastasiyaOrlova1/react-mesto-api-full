@@ -1,0 +1,16 @@
+.auth {
+    width: 358px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 60px;
+}
+
+@media (max-width: 480px) {
+    .auth {
+        max-width: 240px;
+        padding: 30px 20px;
+    }
+}

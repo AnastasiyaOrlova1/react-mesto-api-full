@@ -1,0 +1,10 @@
+.profile__wrapper-avatar {
+    position: relative;
+    margin-right: 30px;
+}
+
+@media (max-width:768px) {
+    .profile__wrapper-avatar  {
+        margin-right: 0;
+    }
+}

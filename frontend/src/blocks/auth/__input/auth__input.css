@@ -1,0 +1,22 @@
+.auth__input {
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 17px;
+    box-sizing: border-box;
+    padding-bottom: 13px;
+    border: 0;
+    border-bottom: 2px solid #CCCCCC;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 14px;
+    line-height: 17px;
+    background-color: transparent;
+}
+
+.auth__input:focus {
+    outline: none;
+}
+
+.auth__input:nth-child(4) {
+    margin-bottom: 216px;
+}

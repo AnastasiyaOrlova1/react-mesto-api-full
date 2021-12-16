@@ -1,0 +1,11 @@
+.profile__wrapper-text{
+    display: flex;
+    padding-top: 22.75px;
+}
+
+
+@media (max-width: 425px){
+    .profile__wrapper-text{
+        padding-top: 22.25px;
+    }
+}

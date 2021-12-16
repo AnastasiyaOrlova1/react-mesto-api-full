@@ -1,0 +1,19 @@
+.galery__card-like{
+    width: 20.76px;
+    height: 18.13px;
+    background-image: url(../../../images/Like_disabled.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    outline-width: 0;
+    flex-shrink: 0;
+    transition: .4s ease;
+    margin-bottom: 3px;
+}
+
+.galery__card-like:hover{
+    opacity: 0.5;
+}
