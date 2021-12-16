@@ -55,15 +55,15 @@ const likeCards = (req, res, next) => {
     { $addToSet: { likes: req.user._id } },
     { new: true, runValidators: true },
   )
-  .orFail(() => { throw new NotFoundError('Карточки с таким id не существует'); })
-  .then((likeCard) => res.send(likeCard))
-  .catch((err) => {
-    if (err.name === 'CastError') {
-      next(new ValidationError('Id неверный'));
-    } else {
-      next(err);
-    }
-  });
+    .orFail(() => { throw new NotFoundError('Карточки с таким id не существует'); })
+    .then((likeCard) => res.send(likeCard))
+    .catch((err) => {
+      if (err.name === 'CastError') {
+        next(new ValidationError('Id неверный'));
+      } else {
+        next(err);
+      }
+    });
 };
 
 const dislikeCard = (req, res, next) => {
@@ -72,15 +72,15 @@ const dislikeCard = (req, res, next) => {
     { $pull: { likes: req.user._id } },
     { new: true, runValidators: true },
   )
-  .orFail(() => { throw new NotFoundError('Карточки с таким id не существует'); })
-  .then((card) => res.send(card))
-  .catch((err) => {
-    if (err.name === 'CastError') {
-      next(new ValidationError('Id неверный'));
-    } else {
-      next(err);
-    }
-  });
+    .orFail(() => { throw new NotFoundError('Карточки с таким id не существует'); })
+    .then((card) => res.send(card))
+    .catch((err) => {
+      if (err.name === 'CastError') {
+        next(new ValidationError('Id неверный'));
+      } else {
+        next(err);
+      }
+    });
 };
 
 module.exports = {

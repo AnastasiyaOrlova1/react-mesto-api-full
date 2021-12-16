@@ -66,7 +66,7 @@ const createUser = (req, res, next) => {
         email: user.email,
       }))
       .catch((err) => {
-        if (err.name === 'MongoError' || err.code === 11000) {
+        if (err.code === 11000) {
           next(new DuplicateError('Пользователь с таким email уже существует'));
         } else if (err.name === 'ValidationError' || err.name === 'CastError') {
           next(new ValidationError('Пароль или почта некорректны'));

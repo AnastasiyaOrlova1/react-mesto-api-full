@@ -1,4 +1,3 @@
-
 const express = require('express');
 
 const app = express();
@@ -28,7 +27,7 @@ mongoose.connect('mongodb://localhost:27017/mestodb', {
 });
 
 app.use(cors({
-  origin: "https://mesto.orlovas.nomoredomains.rocks",
+  origin: 'https://mesto.orlovas.nomoredomains.rocks',
   credentials: true,
 }));
 
@@ -36,7 +35,6 @@ app.use(requestLogger);
 
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-
 
 app.get('/crash-test', () => {
   setTimeout(() => {
@@ -85,7 +83,6 @@ app.all('*', () => {
 
 app.use(errorLogger);
 app.use(errorHandler);
-
 
 app.listen(PORT, () => {
   console.log(`App listening on port ${PORT}`);
